@@ -11,7 +11,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background: url('fondo.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
@@ -19,13 +19,31 @@
             text-align: center;
         }
 
+        .container {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgba(27, 67, 50, 0.8); /* Semi-transparent Dark Forest Green */
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
         }
 
@@ -37,6 +55,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
         }
 
         a:hover {
@@ -44,19 +63,23 @@
             color: #1b4332; /* Dark Forest Green */
         }
 
-        .container {
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(27, 67, 50, 0.8); /* Semi-transparent Dark Forest Green */
-        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
 
-        .logo {
-            margin-bottom: 20px;
-        }
+            p {
+                font-size: 1rem;
+            }
 
-        .logo img {
-            max-width: 550px; /* Adjust size as needed */
-            height: auto;
+            .logo img {
+                max-width: 550px; /* Smaller logo for mobile */
+            }
+
+            .container {
+                padding: 15px;
+                margin: 5px;
+            }
         }
     </style>
 </head>
@@ -68,7 +91,7 @@
         <h1>Costa Rica Natural Adventure</h1>
         <p>Our website is currently being renovated.<br>We'll be back online soon!</p>
         <p>Thank you for your patience.</p>
-        <p>In the meantime, visit us on <a href="https://www.facebook.com/CostaRicaNaturalAdventure" target="_blank">Facebook</a>.</p>
+        <p>In the meantime, visit us on <a href="https://www.facebook.com/CostaRicaNaturalAdventure" target="_blank">Facebook</a></p>
     </div>
 </body>
 </html>
